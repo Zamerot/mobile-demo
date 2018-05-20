@@ -1,0 +1,36 @@
+page-home {
+
+
+
+    .album-display {
+        display: flex;
+        flex-direction: row;
+
+        .album-icon {
+            font-size: 40px;
+            color: #607d8b;
+            margin-right: 10px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+      .album-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .album-details {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+      }
+      
+    }
+
+    .delete {
+        background: #f44336;
+    }
+}

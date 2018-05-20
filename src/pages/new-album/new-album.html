@@ -1,0 +1,30 @@
+<!--
+  Generated template for the NewAlbumPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>New Slideshow</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="text" [(ngModel)]="albumName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Description</ion-label>
+      <ion-input type="text" [(ngModel)]="albumDesc"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button class="submit" ion-button full (click)="submit()"> Submit</button>
+</ion-content>

@@ -1,0 +1,48 @@
+page-album-view {
+    .photo-view{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .image-area {
+            width: 30%;
+
+            img {
+                display: block;
+                height: 100px;
+                width: auto;
+                margin-right: 10px;
+            }
+        }
+
+        
+    }
+
+    ion-list {
+        overflow-y: auto;
+        height: 90%;
+    }
+
+    .order-buttons {
+        display: flex;
+        flex-direction: column;
+
+        height: 50%;
+    }
+
+    .play{
+        background: #66bb6a;
+    }
+  
+    .delete {
+           background: #f44336;
+    }
+
+    .order-buttons{
+        button {
+            
+            background: #78909c;
+        }
+    }
+
+}

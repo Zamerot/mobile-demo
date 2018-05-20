@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+
+    <div class="title-row">
+       <ion-title>Slide Shows</ion-title>
+       <ion-buttons end>
+         <button class="add-album" ion-button [navPush]="newAlbumPage"> <ion-icon name="add"></ion-icon></button>
+       </ion-buttons>
+    </div>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let album of albums | async">
+      <button ion-item (click)="displayAlbum(album)">
+        <div class="album-display">
+          <ion-icon class="album-icon" name="albums"></ion-icon>
+          <div class="album-info">
+            <h1>{{ album.name }}</h1>
+            <div class="album-details">
+              <span>{{album.description}}</span>
+              <span>{{duration(album)}} <ion-icon name="timer"></ion-icon></span>
+            </div>
+          </div>
+        </div>
+      </button>
+      <ion-item-options side="right">
+        <button ion-button class="delete" (click)="deleteAlbum(album)"><ion-icon name="trash"></ion-icon></button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

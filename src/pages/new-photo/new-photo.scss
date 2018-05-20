@@ -1,0 +1,26 @@
+page-new-photo {
+
+    ion-list{
+        height: 90%;
+    }
+
+    .submit{
+        width: 100%;
+        background: #66bb6a;
+    }
+
+
+    .photo-view {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .select-icon {
+        margin-left: 10px;
+    }
+
+    .image-selection-button{
+        background: #78909c;
+    }
+}
